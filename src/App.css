@@ -7,11 +7,8 @@ body{
 nav {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 10px 20px;
-  position: fixed;
-  top: 0;
 }
 
 nav img {
@@ -29,6 +26,7 @@ nav ul {
 nav a {
   text-decoration: none;
   color: rgb(92, 80, 96);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 
@@ -40,4 +38,91 @@ button {
 
 h1{
   color:rgb(92, 80, 96);
+}
+
+.error{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 50px;
+  text-align: center;
+}
+
+.error img{
+  width: 200px;
+}
+
+.error div{
+  margin: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.error h1{
+  font-size: 20px;
+}
+
+.error button{
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.product-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.card{
+  width: 300px;
+  background-color: rgb(255, 254, 251);
+  text-align: center;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.155);
+}
+
+.card img{
+  width: 250px;
+}
+
+.card h3{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+.card p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 15px;
+}
+
+.detail-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.detail-container img{
+  width: 500px;
+  
+}
+
+.detail-text{
+  text-align: start;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.detail-text h2{
+  font-size: 30px;
+}
+
+.detail-text p{
+  font-size: 20px;
 }
