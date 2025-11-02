@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0;
   padding: 0;
 }
@@ -36,11 +36,11 @@ button {
   color: white;
 }
 
-h1{
-  color:rgb(92, 80, 96);
+h1 {
+  color: rgb(92, 80, 96);
 }
 
-.error{
+.error {
   display: flex;
   align-items: center;
   justify-content: start;
@@ -48,27 +48,27 @@ h1{
   text-align: center;
 }
 
-.error img{
+.error img {
   width: 200px;
 }
 
-.error div{
+.error div {
   margin: 40px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.error h1{
+.error h1 {
   font-size: 20px;
 }
 
-.error button{
+.error button {
   border: none;
   border-radius: 5px;
   padding: 15px;
   cursor: pointer;
 }
 
-.product-container{
+.product-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -77,52 +77,300 @@ h1{
   margin: 20px auto;
 }
 
-.card{
-  width: 300px;
+.card {
+  width: 280px;
   background-color: rgb(255, 254, 251);
   text-align: center;
   margin: 10px;
   border-radius: 5px;
   box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.155);
-}
-
-.card img{
-  width: 250px;
-}
-
-.card h3{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.card h3 {
   font-size: 20px;
+  color: rgb(92, 80, 96);
+  margin: 15px 10px 5px;
 }
 
-.card p{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.card p {
   font-size: 15px;
+  color: rgb(77, 77, 77);
+  margin: 6px 15px;
 }
 
-.detail-container{
+.card button {
+  background-color: rgb(92, 80, 96);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin: 15px 0 20px;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: rgb(115, 101, 121);
+}
+
+.detail-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 80%;
-  margin: 20px auto;
-  padding: 10px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: rgb(255, 254, 251);
+  border-radius: 10px;
+  box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.1);
+  gap: 40px;
 }
 
-.detail-container img{
-  width: 500px;
-  
+.detail-container img {
+  width: 400px;
+    height: auto;
+  border-radius: 8px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15);
+
 }
 
-.detail-text{
+.detail-text {
   text-align: start;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(92, 80, 96);
+  max-width: 450px;
+}
+
+.detail-text h2 {
+  font-size: 30px;
+    margin-bottom: 15px;
+
+}
+
+.detail-text p {
+  font-size: 20px;
+   font-weight: bold;
+  color: rgb(80, 60, 85);
+}
+
+.detail-stock {
+  font-style: italic;
+  color: rgb(130, 120, 135);
+}
+
+.cart-widget {
+  position: relative;
+}
+
+.cart-widget i {
+  font-size: 24px;
+  color: rgb(92, 80, 96);
+}
+
+.item-count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.detail-text h2{
-  font-size: 30px;
+.controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
-.detail-text p{
+.controls button {
+  border: none;
+  border-radius: 5px;
+  padding: 6px 10px;
+  background-color: rgb(92, 80, 96);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.controls button:hover {
+  background-color: rgb(120, 102, 125);
+}
+
+.item-count button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background-color: rgb(92, 80, 96);
+  color: white;
+  cursor: pointer;
+}
+
+.item-count p {
+  margin: 0;
+  font-size: 18px;
+  color: rgb(92, 80, 96);
+}
+
+.cart-container {
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgb(255, 254, 251);
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(92, 80, 96);
+}
+
+.cart-container h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(92, 80, 96, 0.2);
+}
+
+.cart-item img {
+  border-radius: 8px;
+  width: 100px;
+}
+
+.cart-item h3 {
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.cart-item p {
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.cart-item button {
+  background-color: rgb(92, 80, 96);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cart-item button:hover {
+  background-color: rgb(120, 102, 125);
+}
+
+.cart-container h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cart-container div button {
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: rgb(92, 80, 96);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.cart-container div button:hover {
+  background-color: rgb(120, 102, 125);
+}
+
+.cart-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.empty-cart {
+  text-align: center;
+  margin: 100px auto;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(92, 80, 96);
+}
+
+.empty-cart p {
   font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.empty-cart button {
+  background-color: rgb(92, 80, 96);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.empty-cart button:hover {
+  background-color: rgb(120, 102, 125);
+}
+
+.checkout-container {
+  width: 60%;
+  margin: 60px auto;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(92, 80, 96);
+}
+
+.checkout-container h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.checkout-container h3 {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: rgb(120, 102, 125);
+}
+
+.checkout-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+form input {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid rgba(92, 80, 96, 0.4);
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+form button {
+  background-color: rgb(92, 80, 96);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: rgb(120, 102, 125);
 }
